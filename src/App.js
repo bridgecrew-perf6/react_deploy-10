@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import Mobile from './test'
+import Parent from './Parent'
+import counterContext from './CounterContext';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+export default function App() {
+  let countState = useState(20);
+  //let [count, setCount] = useState(0);
+  return(
+    <counterContext.Provider value={countState}>
+    <div> 
+      <Parent childName="Shahbaz" />
     </div>
+    </counterContext.Provider>
   );
 }
 
-export default App;
+
