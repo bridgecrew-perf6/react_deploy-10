@@ -10,7 +10,7 @@ export default function App() {
   return(
     <counterContext.Provider value={countState}>
     <div> 
-      <Parent childName="Shahbaz" />
+      <Parent childName="Afnan" />
     </div>
     </counterContext.Provider>
   );
