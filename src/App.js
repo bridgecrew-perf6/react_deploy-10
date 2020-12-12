@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Mobile from './test'
+//import Mobile from './test'
 import Parent from './Parent'
 import counterContext from './CounterContext';
 
